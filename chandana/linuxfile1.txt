@@ -1,0 +1,22 @@
+The Filesystem Hierarchy standard defines the directory structure and directory contents in Unix
+These are directories present in unix operating system 
+ 1./(Root) :Every single file and directory starts from root directory./root is the root user's home directory which is not the same as /.
+ 2./bin : The common linux command used in single user modes are located under these diretory .
+      eg: ps,ls....
+ 3./boot :Boot loader files. eg: kernels.
+ 4./dev:Essential device files.These includes terminal devices,usb or any devices attached to the         system. 
+ 5./etc :Contains configuration files required by the programs.
+      eg:/etc/resolv.conf.
+ 6./home:Home directories for all users to store their personal files.
+      eg:/home/kv.
+ 7./lib:libraries essential for the binaries in /bin/ and /sbin/.
+ 8./media:temporary mount directory for removable devices.
+       eg: /media/cdrom for CD-ROM,
+           /media/floppy for floppy drives.
+ 9./mnt: Temporarily mounted file systems.
+ 10./opt:Optional application software packages.
+ 11./sbin:Essential system binaries.Eg:reboot,fdisk...
+ 12./srv: Site-specific data served by this system such as data and scripts for web servers . 
+ 13./tmp:Directory that contains temporary files created by system and users.
+ 14./usr:Contains majority of user utilities and applications.
+15./proc: Contains information about system process.

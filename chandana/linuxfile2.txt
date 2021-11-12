@@ -1,0 +1,36 @@
+BASIC LINUX COMMANDS....
+
+ls---listing all files on current directory
+ls-l---formatted listing
+cddir---change directory name
+cd_----change to parent directory
+cd---change to home directory
+pwd----present working directory
+mkdir----create a directory
+touch---create or update file
+rmdir----to remove a directory
+ping----to check your connection to server
+clear----clear the terminal
+cat----displays the contents of file
+rm----remove a file
+mv----to move a file or directory from one location to another location
+rename----to rename the file name
+head----it displays the first ten lines of a file
+tail----it displays the last ten lines of a file
+
+ls -li ---list the files with inode or index values
+ls -lh --- list the files in human readable format
+ls -lt -- list the files according to latest modified time format
+ln  -- creates the new file with inode value of the source file
+ls -l -author -- gives author of the files and folders
+chmod --- used to change the permissions of the files
+echo -- used to write the text to the file
+| -- pipe is used to connect the output of one command to input of another command
+ls -l | more -- shows one page at a time
+ls -l | tail-1 -- it gives the last line of the file
+ls -l |head --- it gives the first 10 lines 
+ls -l |head -1 --  it gives the first line 
+vi -filename -- it will allow to write the text to the respective file
+esc :wq --- it get out from the vi editor
+ls -l -- group -- directories -- first --- it gives the directories at the first
+passwd -filename -- is used to change the password for corresponding file
