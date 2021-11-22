@@ -1,0 +1,21 @@
+Shellscript 4 ::
+
+ vi script4.sh
+$ cat script4.sh
+#!/bin/bash
+for ((i=7; i>= 1; i--))
+do
+ echo "$i"
+done
+
+$ ./script4.sh
+7
+6
+5
+4
+3
+2
+1
+$ 
+
+
