@@ -1,0 +1,25 @@
+SHELLSCRIPT 5 ::
+
+ vi script5.sh
+$ cat script5.sh
+ #!/bin/bash
+echo "Enter your lucky number"
+read n
+if [$n -eq 101 ];
+then 
+echo "you got first prize "
+elif [ $n -eq 212 ];
+then 
+echo "you got second prize "
+elif [ $n -eq 777 ];
+then 
+echo "You got third prize"
+
+else "Sorry,try for next time "
+fi
+
+$ ./script5.sh
+Enter your lucky number
+777
+You got third prize
+$ 
