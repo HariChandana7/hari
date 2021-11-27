@@ -1,30 +1,33 @@
 import java.util.Scanner;
 class Program2
 {
- public static void main(String args[])
- {
-   int n ;
-   Scanner sc=new Scanner(System.in);
-   n=sc.nextInt();
-  if(n%2==0) // determines whether n is even or odd 
-  { 
-    if(n>=2 && n<=5)
-     { 
-       System.out.println("Not Weird");
-     }
-    else if(n>=6 && n<=20)
-     {
-       System.out.println("Weird");
-     }
-      else{
-            System.out.println("Not Weird");
-       }
-  }
-  else
+   public static void main(String args[])
   {
-   System.out.println("Weird");
-  }  
- }
+     int n ;
+     Scanner sc=new Scanner(System.in);
+     n=sc.nextInt();
+      if(n<=100 &&  n%2==0) // determines whether n is even or odd 
+      { 
+           if(n>=2 && n<=5)
+           { 
+               System.out.println("Not Weird");
+           }
+           else if(n>=6 && n<=20)
+           {
+               System.out.println("Weird");
+           }
+           else{
+               System.out.println("Not Weird");
+          }
+     }
+    else if(n<=100 && n%2 !=0)
+    {
+         System.out.println("Weird");
+    } 
+    else {
+              System.out.println("Invalid input");
+        } 
+   }
 }
  //Output :
  //8
