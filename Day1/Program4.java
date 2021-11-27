@@ -11,8 +11,10 @@ class Program4
     }
 }
 
- /* Output :
-Java           007
-Python         777
-JavaScript     077  */
+/* Output
+
+Java                007
+Python           777
+JavaScript     077
+ */
 
