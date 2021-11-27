@@ -6,7 +6,7 @@ class Program2
      int n ;
      Scanner sc=new Scanner(System.in);
      n=sc.nextInt();
-      if(n<=100 &&  n%2==0) // determines whether n is even or odd 
+      if(n>=1 && n<=100 &&  n%2==0) 
       { 
            if(n>=2 && n<=5)
            { 
@@ -20,7 +20,7 @@ class Program2
                System.out.println("Not Weird");
           }
      }
-    else if(n<=100 && n%2 !=0)
+    else if(n>=1 && n<=100 && n%2 !=0)
     {
          System.out.println("Weird");
     } 
@@ -38,3 +38,12 @@ class Program2
 //Not weird
 //34
 //Not Weird
+//-25
+//Invalid input
+//-32
+//Invalid input
+//164
+//Invalid input
+
+
+
