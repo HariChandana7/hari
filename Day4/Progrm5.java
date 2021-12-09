@@ -22,10 +22,11 @@ public class Program5
             System.out.println(num +" Is not a Prime");
        }
 }
-//Output :
+//Output 1 :
 //23
 //23 Is a Prime
-//OPutput 2:
+
+//Output 2:
 //16
 //16 Is not a Prime
 
