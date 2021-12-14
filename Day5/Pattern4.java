@@ -27,4 +27,3 @@ public class Pattern4
   
   
 
-C:\LearnLinux\har
