@@ -1,30 +1,30 @@
-//Hollow Half Pyramid...
-import java.util.*;
+//Hollow Inverted Half Pyramid.....
+
+import java.util.Scanner;
 class Pattern3
 {
-  public static void main(String... args)
-   {
-     Scanner sc=new Scanner(System.in);
-      int rows =sc.nextInt();
-       for(int i=1 ;i<=rows ;i++)
-         {
-           for(int j=i;j<=rows;j++)
-           {
-               System.out.print(" ");
-            }
-         for(int k=1 ;k<=(2*i-1); k++)
+    public static void main(String args[])
+     {
+       Scanner sc=new Scanner(System.in);
+         int n= sc.nextInt();
+          for(int i=1 ;i<=n ;i++)
           {
-               if(i == rows || k ==1 || k == rows)
-                {
-                 System.out.print(k+ " " );
-                 }
-                else {
-                     System.out.print(" "); 
-                 }
+             for(int j=i ;j<=n ;j++)
+              {
+                if (i == 1 || j==n  ||  j==i)
+                           System.out.print(j + " ");
+                 else
+                            System.out.print("  ");
+                }
+                System.out.println();
            }
-      System.out.println();
-    }
-    }
+       }
 }
 
-          
+//Output :
+//5
+//1 2 3 4 5
+//2        5
+//3    5
+//4 5
+//5
