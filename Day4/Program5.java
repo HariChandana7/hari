@@ -6,18 +6,18 @@ import java.util.*;
  {
     public static void main(String... args)
      {
-          boolean checkPrime = true;
+          boolean isPrime = true;
          Scanner sc = new Scanner(System.in);
            int num = sc.nextInt();
             int a=2; 
            while(a <= num/2) {
                if( num %a==0)  
                           {
-                         checkPrime = false;
+                         isPrime = false;
                          }
              a++;
            }
-        if (checkPrime)
+        if (isPrime)
              System.out.println(num +" Is a Prime");
          else
              System.out.println(num +" Is not a Prime");
