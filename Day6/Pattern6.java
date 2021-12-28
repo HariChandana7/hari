@@ -1,36 +1,45 @@
-//Hollow Full Pyramid..
+// Full Pyramid number pattern...
 
-import java.util.*;
-class Pattern6
+import java.util.Scanner;
+public class Pattern6
 {
-   public static void main(String... args)
-    {
-     Scanner sc =new Scanner(System.in);
-       int rows = sc.nextInt();
-         for(int i=1; i<=rows;i++)
-           {
-            for(int k=i ;k<rows ;k++)
-            {
-                 System.out.print("  ");
-             } 
-          for(int k=1 ;k<=i ;k++) 
-            {
-                  if(k==1 ||  k== rows)
-                              System.out.print(k+"  ");
-                  else  
-                          System.out.print("  ");
-             }        
-              for(int k=1; k<i ;k++) 
-               {
-                      if(k== i-1 &&  k< rows-1)
-                             System.out.print(k+1);
-                       else
-                             System.out.print("  ");
-               }     
-              System.out.println( );
-          }
-      }
+     public static void printPattern(int n)
+	{
+	 int num=0;
+	  for(int i=1; i<=n; i++)
+	      {
+	           for(int k=i; k<n; k++)
+	                      System.out.print("  "); 
+		   for(int j=1; j<=i; j++)
+		       {
+			num++;
+			System.out.print(num +" ");
+			}
+			for(int t=1; t<i; t++)
+			{
+				num--;
+				System.out.print(num +" ");
+			}
+			System.out.println();
+		}
+	}
+
+
+	public static void main(String... args)
+	{
+		Scanner scan = new Scanner(System.in);
+		int n=scan.nextInt();
+		scan.close();
+	
+		printPattern(n);
+	}
 }
 
-//Output:
-//5
+/* Output :
+5
+            1
+        2 3 2
+     3 4 5 4 3
+  4 5 6 7 6 5 4
+5 6 7 8 9 8 7 6 5
+*/
