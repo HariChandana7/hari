@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class AlphaCategorization {
  
     static void print(String str1) {
@@ -12,7 +13,9 @@ class AlphaCategorization {
         }
     }
     public static void main(String[] args) {
-        String str = "ABCFRsTUVzyx";
+Scanner Scan= new Scanner(System.in);
+String str= Scan.nextLine();
+       // String str = "ABCFRsTUVzyx";
         print(str);
     }
 }
@@ -28,4 +31,16 @@ R
 s
 TUV
 zyx
+
+Sampe Input :
+aBcdRyzXt
+
+Sample OutPut :
+a
+B
+cd
+R
+yz
+X
+t
 */
