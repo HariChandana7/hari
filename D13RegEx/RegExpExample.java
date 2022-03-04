@@ -8,7 +8,7 @@ public class RegExpExample
 	  //final String REGEX_PATTERN ="coo.*per";
 	  Pattern  p = Pattern.compile("coo.*per");
 	 try  {
-	            BufferedReader  br = new BufferedReader(new FileReader("C:\\Users\\91991\\Documents"));
+	            BufferedReader  br = new BufferedReader(new FileReader("C:\\Users\\91991\\Desktop"));
 		String line ;
 		while((line = br.readLine()) != null)  {
 		       Matcher  m = p.matcher(line);
