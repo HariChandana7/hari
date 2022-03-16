@@ -12,16 +12,18 @@ public class Example1
           System.out.println(str.charAt(index));
            System.out.println("Starting character is:  "+ str.charAt(0) + " and   Ending character is : " + str.charAt(n-1));
            System.out.println(str.substring(index-3 , n));
-         System.out.println(str.contains("ANA"));
+         System.out.println(str.contains("graph"));
           System.out.println(str.contains("Gang"));
     }
  }  
+/* Sample Input :
+Bibilography
+7
 
-//Output :
-//HARICHANDANA
-//7
-//N
-//Starting character is:  H and   Ending character is : A
-//CHANDANA
-//true
-//false
+Sample Output:
+r
+Starting character is:  B and   Ending character is : y
+lography
+true
+false
+*/

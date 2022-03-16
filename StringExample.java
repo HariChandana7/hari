@@ -9,12 +9,13 @@ public class StringExample
         String str = sc.nextLine();
           char array[] = str.toCharArray();
             System.out.println("Given String : " +str);
-        separate0and1(array, str.length());
+             
+             separate0and1(array, str.length());
              System.out.println("New String : ");
-        for(int i = 0 ; i <= str.length()-1; i++)
-        {
-            System.out.print( array[i]+" ");
-        }
+	for(int i = 0 ; i <= str.length()-1; i++)
+	{
+		System.out.print( array[i]+" ");
+                    }
         sc.close();
     }
      static  void  separate0and1( char array[], int n)
@@ -22,18 +23,18 @@ public class StringExample
         int left = 0, right = n-1;
     	while (left < right)
     	{
-                while (array[left] == '0' && left < right)
-                 left++;
-            while (array[right] == '1' && left < right)
-                   right--;
-            if (left < right)
-            {
-                array[left] = '0';
-                array[right] = '1';
-                left++;
-                right--;
-            }
-        }       
+      	     while (array[left] == '0' && left < right)
+          	          left++;
+             	     while (array[right] == '1' && left < right)
+               	           right--;
+           	 if (left < right)
+           	 {
+                   	       array[left] = '0';
+                           array[right] = '1';
+                            left++;
+                           right--;
+                     }
+  	 }       
         }
 }
 /* Output :
